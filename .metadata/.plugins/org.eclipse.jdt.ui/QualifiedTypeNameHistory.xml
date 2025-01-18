@@ -1,2 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.awt.Event"/>
+    <fullyQualifiedTypeName name="com.example.demo.entity.Member_Event"/>
+    <fullyQualifiedTypeName name="com.example.demo.entity.Member_Event_Id"/>
+    <fullyQualifiedTypeName name="com.example.demo.dao.Member_EventRepository"/>
+    <fullyQualifiedTypeName name="com.example.demo.dao.Member_ToolsRepository"/>
+    <fullyQualifiedTypeName name="com.example.demo.proxies.EventProxyService"/>
+    <fullyQualifiedTypeName name="com.example.demo.proxies.ToolsProxyService"/>
+    <fullyQualifiedTypeName name="com.example.demo.entity.Member_Tools"/>
+    <fullyQualifiedTypeName name="com.example.demo.entity.Member_Tools_Id"/>
+    <fullyQualifiedTypeName name="com.example.demo.bean.ToolsBean"/>
+    <fullyQualifiedTypeName name="com.example.demo.bean.EventBean"/>
+    <fullyQualifiedTypeName name="java.awt.print.Pageable"/>
+    <fullyQualifiedTypeName name="com.example.demo.service.IArticleService"/>
+    <fullyQualifiedTypeName name="com.example.demo.service.IEventService"/>
+    <fullyQualifiedTypeName name="com.example.demo.service.IToolService"/>
+    <fullyQualifiedTypeName name="com.example.demo.entity.Tool"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+</qualifiedTypeNameHistroy>

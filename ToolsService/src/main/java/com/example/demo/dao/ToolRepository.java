@@ -8,7 +8,6 @@ import org.springframework.data.rest.webmvc.RepositoryRestController;
 
 import com.example.demo.entity.Tool;
 
-@RepositoryRestController
 public interface ToolRepository extends JpaRepository<Tool, Long>{
 	List<Tool> findByDate (Date date);
 	List<Tool> findBySource (String source);

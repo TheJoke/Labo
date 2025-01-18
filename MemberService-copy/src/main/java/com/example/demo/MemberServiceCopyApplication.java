@@ -40,17 +40,24 @@ public class MemberServiceCopyApplication implements CommandLineRunner {
 		Member etd2 = Etudiant.builder().cin("1234567").dateInscription(new Date()).dateNaissance(new Date())
 				.diplome("ing").email("nihel@gmail.com").password("pass1").encadrant(null).cv("cv1").nom("aloulou")
 				.prenom("nihel").build();
+		Member etd3 = Etudiant.builder().cin("12345678").dateInscription(new Date()).dateNaissance(new Date())
+				.diplome("mastère").email("cherif.youssef@enis.tn").password("pass1").encadrant(null).cv("cv1").nom("cherif")
+				.prenom("youssef").build();
 		Member en1 = EnseignantChercheur.builder().cin("123").dateNaissance(new Date())
 				.email("asma@gmail.com").password("pass1").cv("cv1").etablissement("enis").nom("bahri").prenom("asma")
 				.grade("professeur").build();
 		Member en2 = EnseignantChercheur.builder().cin("1237").dateNaissance(new Date())
 				.email("mariem@gmail.com").password("pass1").cv("cv2").etablissement("enis").nom("kharrat")
 				.prenom("mariem").grade("maitre assistant").build();
+		Member en3 = EnseignantChercheur.builder().cin("65498753").dateNaissance(new Date())
+				.email("youssefcherif351@gmail.com").password("546546").cv("cv2").etablissement("enis").nom("kharrat")
+				.prenom("mariem").grade("maitre assistant").build();
 		memberService.addMember(etd1);
 		memberService.addMember(etd2);
 		memberService.addMember(en1);
 		memberService.addMember(en2);
-
+		memberService.addMember(etd3);
+		memberService.addMember(en3);
 		Member m = memberService.findMember(1L);
 		m.setCv("cv2");
 
@@ -68,6 +75,13 @@ public class MemberServiceCopyApplication implements CommandLineRunner {
 		}
 		memberService.affecterAuteurToArticle(e.getId(), 1L);
 		memberService.findArticleParAuteur(e.getId());
+		
+		memberService.affecterMemberToEvent(e.getId(),1L);
+		memberService.affecterMemberToTools(e.getId(), 1L);
+		
+		System.out.println(memberService.findEventParMemberId(e.getId()));
+		System.out.println(memberService.findToolsParMemberId(e.getId()));
+		
 		System.out.println(article.findArticleById(1L));;
 		//delete Member
 		//memberService.deleteMember(2L);

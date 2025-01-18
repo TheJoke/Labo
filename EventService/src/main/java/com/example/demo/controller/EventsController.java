@@ -9,42 +9,41 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.Event;
 import com.example.demo.service.IEventService;
-
+@RestController
 public class EventsController {
 	@Autowired
-	IEventService EventService;
+	IEventService eventService;
 
-	@RequestMapping(value = "/events", method = RequestMethod.GET)
-	public List<Event> findevents() {
-		return EventService.findAll();
+	@GetMapping(value = "/events")
+	public List<Event> getEvents() {
+	    return eventService.findAll();
 	}
 
 	@GetMapping(value = "/events/{id}")
-	public Event findOneEventById(@PathVariable Long id) {
-		return EventService.findEvent(id);
+	public Event findEventById(@PathVariable Long id) {
+		return eventService.findEvent(id);
 	}
 
 	@PostMapping(value = "/events")
-	public Event addMembre(@RequestBody Event m) {
-		return EventService.addEvent(m);
+	public Event addEvent(@RequestBody Event m) {
+		return eventService.addEvent(m);
 	}
 
 
 
 	@DeleteMapping(value = "/events/{id}")
-	public void deleteMembre(@PathVariable Long id) {
-		EventService.deleteEvent(id);
+	public void deleteEvent(@PathVariable Long id) {
+		eventService.deleteEvent(id);
 	}
 
 	@PutMapping(value = "/events/{id}")
-	public Event updatemembre(@PathVariable Long id, @RequestBody Event p) {
+	public Event updateEvent(@PathVariable Long id, @RequestBody Event p) {
 		p.setId(id);
-		return EventService.updateEvent(p);
+		return eventService.updateEvent(p);
 	}
 
 

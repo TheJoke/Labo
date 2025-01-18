@@ -20,7 +20,7 @@ public interface IArticleService {
 	// Filtrage par Articles
 	public List<Article> findByTitre(String titre);
 
-	public List<Article> findByType(String lien);
+	public List<Article> findByType(String type);
 
 	public List<Article> findByDate(Date date);
 }

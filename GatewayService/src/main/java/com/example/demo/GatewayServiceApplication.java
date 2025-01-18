@@ -17,13 +17,16 @@ public class GatewayServiceApplication {
 		SpringApplication.run(GatewayServiceApplication.class, args);
 	}
 	@Bean
-	
-	DiscoveryClientRouteDefinitionLocator definitionLocator(
-	ReactiveDiscoveryClient rdc,
-	DiscoveryLocatorProperties dlp)
+	RouteLocator routeLocator(RouteLocatorBuilder builder)
 	{
-	return new DiscoveryClientRouteDefinitionLocator(rdc, dlp);
+	return builder.routes()
+	.route(r->r.path("/membres/**").uri("lb://MEMBERSERVICE-COPY"))
+	.route(r->r.path("/articles/**").uri("lb://ARTICLESERVICE"))
+	.route(r->r.path("/events/**").uri("lb://EVENTSERVICE"))
+	.route(r->r.path("/tools/**").uri("lb://TOOLSSERVICE"))
+	.build();
 	}
+
 
 }
 

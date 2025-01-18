@@ -5,16 +5,20 @@ import java.util.Collection;
 import java.util.Date;
 
 import com.example.demo.bean.ArticleBean;
+import com.example.demo.bean.EventBean;
+import com.example.demo.bean.ToolsBean;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import jakarta.persistence.DiscriminatorColumn;
 import jakarta.persistence.DiscriminatorType;
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
+import jakarta.persistence.PostLoad;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 import jakarta.persistence.Transient;
@@ -54,4 +58,15 @@ public abstract class Member implements Serializable{
 	 private String password;
 	 @Transient
 	 Collection<ArticleBean> pubs;
+	 @Transient
+	 Collection<ToolsBean> tools;
+	 @Transient
+	 Collection<EventBean> evts;
+	 @Transient
+	    private String type;
+	@PostLoad
+	    private void populateType() {
+	        // Populate the role field with the discriminator value
+	        this.type = this.getClass().getAnnotation(DiscriminatorValue.class).value();
+	    }
 }

@@ -46,7 +46,7 @@ public class ArticleServiceImplementation implements IArticleService{
 	}
 	@Override
 	public List<Article> findByType(String type) {
-		return (List<Article>)articleRepository.findByLien(type);
+		return (List<Article>)articleRepository.findByType(type);
 	}
 	@Override
 	public List<Article> findByDate(Date date) {

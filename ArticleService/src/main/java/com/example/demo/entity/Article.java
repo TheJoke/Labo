@@ -31,7 +31,7 @@ public class Article {
 	@NonNull
 	private Date date;
 	
-	private String sourcepdf ;
+	private String sourcePdf ;
 	@Builder
 	public Article(Long id, String type, String titre, String lien,Date date,String sourcepdf) {
 		this.id = id;
@@ -39,7 +39,7 @@ public class Article {
 		this.titre = titre;
 		this.lien = lien;
 		this.date = date;
-		this.sourcepdf = sourcepdf;
+		this.sourcePdf = sourcepdf;
 	}
 	
 	

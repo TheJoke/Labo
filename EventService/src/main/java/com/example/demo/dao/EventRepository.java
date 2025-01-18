@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.webmvc.RepositoryRestController;
 
 import com.example.demo.entity.Event;
-@RepositoryRestController
 public interface EventRepository extends JpaRepository<Event, Long>{
 	List<Event> findBytitre (String name);
 	List<Event> findBylieu (String lieu);

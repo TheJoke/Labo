@@ -239,3 +239,717 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.launching 4 108 2025-01-16 16:26:19.574
+!MESSAGE Working directory does not exist: D:\9raya\3eme\spring\projet\ConfigService
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-01-16 16:26:25.843
+!MESSAGE File not found: D:\9raya\3eme\spring\projet\ConfigService\pom.xml.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ConfigService/pom.xml)[368]: org.eclipse.core.runtime.CoreException: File not found: D:\9raya\3eme\spring\projet\ConfigService\pom.xml.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:32)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.handleReadIOException(LocalFile.java:498)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:479)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:881)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:344)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:334)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:589)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: D:\9raya\3eme\spring\projet\ConfigService\pom.xml (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:477)
+	... 27 more
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2025-01-16 16:26:25.845
+!MESSAGE File not found: D:\9raya\3eme\spring\projet\ConfigService\pom.xml.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\9raya\3eme\spring\projet\ConfigService\pom.xml.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:32)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.handleReadIOException(LocalFile.java:498)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:479)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:881)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:344)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:334)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:589)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: D:\9raya\3eme\spring\projet\ConfigService\pom.xml (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:477)
+	... 27 more
+!SUBENTRY 2 org.eclipse.core.filesystem 4 269 2025-01-16 16:26:25.845
+!MESSAGE File not found: D:\9raya\3eme\spring\projet\ConfigService\pom.xml.
+!STACK 0
+java.io.FileNotFoundException: D:\9raya\3eme\spring\projet\ConfigService\pom.xml (Le chemin d’accès spécifié est introuvable)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:477)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:881)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:344)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:334)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:589)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 16:26:26.362
+!MESSAGE Classpath changed for project: ConfigService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 16:26:26.363
+!MESSAGE Boot project REMOVED: ConfigService
+
+!ENTRY org.eclipse.jdt.core 4 969 2025-01-16 16:26:27.111
+!MESSAGE File not found: D:\9raya\3eme\spring\projet\ConfigService\src\main\java\com\example\demo\ConfigServiceApplication.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ConfigService/src/main/java/com/example/demo/ConfigServiceApplication.java)[368]: org.eclipse.core.runtime.CoreException: File not found: D:\9raya\3eme\spring\projet\ConfigService\src\main\java\com\example\demo\ConfigServiceApplication.java.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:32)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.handleReadIOException(LocalFile.java:498)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.readAllBytes(LocalFile.java:490)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.readAllBytes(FileSystemResourceManager.java:911)
+	at org.eclipse.core.internal.resources.File.readAllBytes(File.java:355)
+	at org.eclipse.core.internal.utils.FileUtil.readAllChars(FileUtil.java:302)
+	at org.eclipse.core.resources.IFile.readAllChars(IFile.java:1369)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.openBuffer(CompilationUnit.java:1202)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:108)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:308)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:249)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildrenOfType(JavaElement.java:263)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getTypes(CompilationUnit.java:958)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getAllTypes(CompilationUnit.java:634)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule$ValidationVisitor.visit(MissingConfigurationProcessorRule.java:148)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule.validate(MissingConfigurationProcessorRule.java:249)
+	at org.springframework.ide.eclipse.boot.validation.framework.SpringBootProjectBuilder.build(SpringBootProjectBuilder.java:100)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.NoSuchFileException: D:\9raya\3eme\spring\projet\ConfigService\src\main\java\com\example\demo\ConfigServiceApplication.java
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3268)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.readAllBytes(LocalFile.java:488)
+	... 31 more
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2025-01-16 16:26:27.112
+!MESSAGE File not found: D:\9raya\3eme\spring\projet\ConfigService\src\main\java\com\example\demo\ConfigServiceApplication.java.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\9raya\3eme\spring\projet\ConfigService\src\main\java\com\example\demo\ConfigServiceApplication.java.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:32)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.handleReadIOException(LocalFile.java:498)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.readAllBytes(LocalFile.java:490)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.readAllBytes(FileSystemResourceManager.java:911)
+	at org.eclipse.core.internal.resources.File.readAllBytes(File.java:355)
+	at org.eclipse.core.internal.utils.FileUtil.readAllChars(FileUtil.java:302)
+	at org.eclipse.core.resources.IFile.readAllChars(IFile.java:1369)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.openBuffer(CompilationUnit.java:1202)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:108)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:308)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:249)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildrenOfType(JavaElement.java:263)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getTypes(CompilationUnit.java:958)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getAllTypes(CompilationUnit.java:634)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule$ValidationVisitor.visit(MissingConfigurationProcessorRule.java:148)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule.validate(MissingConfigurationProcessorRule.java:249)
+	at org.springframework.ide.eclipse.boot.validation.framework.SpringBootProjectBuilder.build(SpringBootProjectBuilder.java:100)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.NoSuchFileException: D:\9raya\3eme\spring\projet\ConfigService\src\main\java\com\example\demo\ConfigServiceApplication.java
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3268)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.readAllBytes(LocalFile.java:488)
+	... 31 more
+!SUBENTRY 2 org.eclipse.core.filesystem 4 269 2025-01-16 16:26:27.112
+!MESSAGE File not found: D:\9raya\3eme\spring\projet\ConfigService\src\main\java\com\example\demo\ConfigServiceApplication.java.
+!STACK 0
+java.nio.file.NoSuchFileException: D:\9raya\3eme\spring\projet\ConfigService\src\main\java\com\example\demo\ConfigServiceApplication.java
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3268)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.readAllBytes(LocalFile.java:488)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.readAllBytes(FileSystemResourceManager.java:911)
+	at org.eclipse.core.internal.resources.File.readAllBytes(File.java:355)
+	at org.eclipse.core.internal.utils.FileUtil.readAllChars(FileUtil.java:302)
+	at org.eclipse.core.resources.IFile.readAllChars(IFile.java:1369)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.openBuffer(CompilationUnit.java:1202)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:108)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:308)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:249)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildrenOfType(JavaElement.java:263)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getTypes(CompilationUnit.java:958)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getAllTypes(CompilationUnit.java:634)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule$ValidationVisitor.visit(MissingConfigurationProcessorRule.java:148)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule.validate(MissingConfigurationProcessorRule.java:249)
+	at org.springframework.ide.eclipse.boot.validation.framework.SpringBootProjectBuilder.build(SpringBootProjectBuilder.java:100)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 969 2025-01-16 16:26:27.113
+!MESSAGE File not found: D:\9raya\3eme\spring\projet\ConfigService\src\test\java\com\example\demo\ConfigServiceApplicationTests.java.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ConfigService/src/test/java/com/example/demo/ConfigServiceApplicationTests.java)[368]: org.eclipse.core.runtime.CoreException: File not found: D:\9raya\3eme\spring\projet\ConfigService\src\test\java\com\example\demo\ConfigServiceApplicationTests.java.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:32)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.handleReadIOException(LocalFile.java:498)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.readAllBytes(LocalFile.java:490)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.readAllBytes(FileSystemResourceManager.java:911)
+	at org.eclipse.core.internal.resources.File.readAllBytes(File.java:355)
+	at org.eclipse.core.internal.utils.FileUtil.readAllChars(FileUtil.java:302)
+	at org.eclipse.core.resources.IFile.readAllChars(IFile.java:1369)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.openBuffer(CompilationUnit.java:1202)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:108)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:308)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:249)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildrenOfType(JavaElement.java:263)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getTypes(CompilationUnit.java:958)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getAllTypes(CompilationUnit.java:634)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule$ValidationVisitor.visit(MissingConfigurationProcessorRule.java:148)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule.validate(MissingConfigurationProcessorRule.java:249)
+	at org.springframework.ide.eclipse.boot.validation.framework.SpringBootProjectBuilder.build(SpringBootProjectBuilder.java:100)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.NoSuchFileException: D:\9raya\3eme\spring\projet\ConfigService\src\test\java\com\example\demo\ConfigServiceApplicationTests.java
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3268)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.readAllBytes(LocalFile.java:488)
+	... 31 more
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2025-01-16 16:26:27.113
+!MESSAGE File not found: D:\9raya\3eme\spring\projet\ConfigService\src\test\java\com\example\demo\ConfigServiceApplicationTests.java.
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\9raya\3eme\spring\projet\ConfigService\src\test\java\com\example\demo\ConfigServiceApplicationTests.java.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:32)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.handleReadIOException(LocalFile.java:498)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.readAllBytes(LocalFile.java:490)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.readAllBytes(FileSystemResourceManager.java:911)
+	at org.eclipse.core.internal.resources.File.readAllBytes(File.java:355)
+	at org.eclipse.core.internal.utils.FileUtil.readAllChars(FileUtil.java:302)
+	at org.eclipse.core.resources.IFile.readAllChars(IFile.java:1369)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.openBuffer(CompilationUnit.java:1202)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:108)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:308)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:249)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildrenOfType(JavaElement.java:263)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getTypes(CompilationUnit.java:958)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getAllTypes(CompilationUnit.java:634)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule$ValidationVisitor.visit(MissingConfigurationProcessorRule.java:148)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule.validate(MissingConfigurationProcessorRule.java:249)
+	at org.springframework.ide.eclipse.boot.validation.framework.SpringBootProjectBuilder.build(SpringBootProjectBuilder.java:100)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.NoSuchFileException: D:\9raya\3eme\spring\projet\ConfigService\src\test\java\com\example\demo\ConfigServiceApplicationTests.java
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3268)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.readAllBytes(LocalFile.java:488)
+	... 31 more
+!SUBENTRY 2 org.eclipse.core.filesystem 4 269 2025-01-16 16:26:27.113
+!MESSAGE File not found: D:\9raya\3eme\spring\projet\ConfigService\src\test\java\com\example\demo\ConfigServiceApplicationTests.java.
+!STACK 0
+java.nio.file.NoSuchFileException: D:\9raya\3eme\spring\projet\ConfigService\src\test\java\com\example\demo\ConfigServiceApplicationTests.java
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3268)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.readAllBytes(LocalFile.java:488)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.readAllBytes(FileSystemResourceManager.java:911)
+	at org.eclipse.core.internal.resources.File.readAllBytes(File.java:355)
+	at org.eclipse.core.internal.utils.FileUtil.readAllChars(FileUtil.java:302)
+	at org.eclipse.core.resources.IFile.readAllChars(IFile.java:1369)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsCharArray(Util.java:1188)
+	at org.eclipse.jdt.internal.core.CompilationUnit.openBuffer(CompilationUnit.java:1202)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:108)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:308)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:249)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildrenOfType(JavaElement.java:263)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getTypes(CompilationUnit.java:958)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getAllTypes(CompilationUnit.java:634)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule$ValidationVisitor.visit(MissingConfigurationProcessorRule.java:148)
+	at org.springframework.ide.eclipse.boot.validation.rules.MissingConfigurationProcessorRule.validate(MissingConfigurationProcessorRule.java:249)
+	at org.springframework.ide.eclipse.boot.validation.framework.SpringBootProjectBuilder.build(SpringBootProjectBuilder.java:100)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 16:26:31.891
+!MESSAGE Classpath changed for project: ConfigService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 16:26:46.026
+!MESSAGE Classpath changed for project: ConfigService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 16:26:46.142
+!MESSAGE Classpath changed for project: ConfigService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 16:26:48.777
+!MESSAGE Classpath changed for project: ConfigService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 16:26:48.777
+!MESSAGE Boot project ADDED: ConfigService
+!SESSION 2025-01-16 17:58:37.016 -----------------------------------------------
+eclipse.buildId=4.33.0.202410162246
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-16 17:58:39.333
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-16 17:58:49.275
+!MESSAGE Logback config file: D:\9raya\3eme\spring\projet\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-01-16 17:58:49.716
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-16 17:58:49.716
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-01-16 17:58:50.035
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-16 17:58:50.035
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-16 17:58:54.080
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\9raya\3eme\spring\sts-4.26.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=D:/9raya/3eme/spring/projet/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1737046734080
+-Dlanguageserver.hover-timeout=225
+-jar
+D:\9raya\3eme\spring\sts-4.26.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.58.0.202410160331\servers\spring-boot-language-server\spring-boot-language-server-1.58.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 17:58:54.082
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-16 17:58:54.092
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 12668
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 17:58:55.289
+!MESSAGE Boot project ADDED: ArticleService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 17:58:55.290
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 17:58:55.292
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 17:58:55.292
+!MESSAGE Boot project ADDED: ConfigService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 17:58:55.292
+!MESSAGE Boot project ADDED: EventService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 17:58:55.293
+!MESSAGE Boot project ADDED: GatewayService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 17:58:55.293
+!MESSAGE Boot project ADDED: MemberService-copy
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 17:58:55.293
+!MESSAGE Boot project ADDED: RegistryService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 17:58:55.294
+!MESSAGE Boot project ADDED: ToolsService
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-16 17:58:55.453
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\21697'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-01-16 23:43:27.256 -----------------------------------------------
+eclipse.buildId=4.33.0.202410162246
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-16 23:44:01.744
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-16 23:44:09.821
+!MESSAGE Logback config file: D:\9raya\3eme\spring\projet\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-01-16 23:44:10.234
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-16 23:44:10.234
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-01-16 23:44:10.527
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-16 23:44:10.527
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-16 23:44:15.098
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\9raya\3eme\spring\sts-4.26.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=D:/9raya/3eme/spring/projet/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1737067455097
+-Dlanguageserver.hover-timeout=225
+-jar
+D:\9raya\3eme\spring\sts-4.26.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.58.0.202410160331\servers\spring-boot-language-server\spring-boot-language-server-1.58.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 23:44:15.098
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-16 23:44:15.110
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 29544
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 23:44:16.468
+!MESSAGE Boot project ADDED: ArticleService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 23:44:16.469
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 23:44:16.470
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 23:44:16.471
+!MESSAGE Boot project ADDED: ConfigService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 23:44:16.472
+!MESSAGE Boot project ADDED: EventService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 23:44:16.472
+!MESSAGE Boot project ADDED: GatewayService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 23:44:16.473
+!MESSAGE Boot project ADDED: MemberService-copy
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 23:44:16.473
+!MESSAGE Boot project ADDED: RegistryService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-16 23:44:16.473
+!MESSAGE Boot project ADDED: ToolsService
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-16 23:44:16.562
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\21697'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 01:29:31.370
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 01:48:21.229
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 01:50:13.544
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 01:51:24.493
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 02:16:21.242
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 02:25:17.896
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 02:25:31.611
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 02:25:38.960
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+!SESSION 2025-01-17 10:31:07.310 -----------------------------------------------
+eclipse.buildId=4.33.0.202410162246
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-17 10:31:37.325
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-17 10:31:41.329
+!MESSAGE Logback config file: D:\9raya\3eme\spring\projet\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-01-17 10:31:41.745
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-17 10:31:41.745
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-01-17 10:31:42.032
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-17 10:31:42.032
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-17 10:31:46.765
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\9raya\3eme\spring\sts-4.26.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=D:/9raya/3eme/spring/projet/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1737106306764
+-Dlanguageserver.hover-timeout=225
+-jar
+D:\9raya\3eme\spring\sts-4.26.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.58.0.202410160331\servers\spring-boot-language-server\spring-boot-language-server-1.58.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 10:31:46.766
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-17 10:31:46.820
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 16324
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 10:31:48.446
+!MESSAGE Boot project ADDED: ArticleService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 10:31:48.447
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 10:31:48.451
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 10:31:48.453
+!MESSAGE Boot project ADDED: ConfigService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 10:31:48.453
+!MESSAGE Boot project ADDED: EventService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 10:31:48.454
+!MESSAGE Boot project ADDED: GatewayService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 10:31:48.455
+!MESSAGE Boot project ADDED: MemberService-copy
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 10:31:48.455
+!MESSAGE Boot project ADDED: RegistryService
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-17 10:31:48.455
+!MESSAGE Boot project ADDED: ToolsService
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-17 10:31:48.578
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\21697'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 14:38:32.553
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 14:43:25.120
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 18:27:23.112
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 18:29:26.594
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 18:30:20.722
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-17 18:33:34.441
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-18 00:15:51.772
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-18 00:18:11.777
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-01-18 00:31:51.272
+!MESSAGE LS Hover Html and JDT hover html were naively concatenated as LS hover HTML BODY tag wasn't found

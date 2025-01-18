@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="true"/>
+	<list key="replacehistory">
+		<item value="Tools"/>
+		<item value="eventService"/>
+		<item value="articleService"/>
+		<item value="Article"/>
+		<item value="articles"/>
+		<item value="Event"/>
+	</list>
+	<list key="searchhistory">
+		<item value="Member"/>
+		<item value="EventService"/>
+		<item value="ArticleService"/>
+		<item value="membres"/>
+	</list>
+</section>

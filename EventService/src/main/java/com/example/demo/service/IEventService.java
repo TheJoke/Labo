@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import java.awt.print.Pageable;
 import java.util.List;
 
 
@@ -24,6 +25,7 @@ public interface IEventService {
 
 	public List<Event> findByDateDebut(String dateDebut);
 	public List<Event> findByDateFin(String dateFin);
+
 	
 
 

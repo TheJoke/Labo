@@ -1,0 +1,15 @@
+package com.example.demo.dao;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import com.example.demo.entity.Member_Event;
+import com.example.demo.entity.Member_Event_Id;
+
+public interface Member_EventRepository extends JpaRepository<Member_Event, Member_Event_Id> {
+	@Query("select m from Member_Event m where m.id.member_id=:x")
+	List<Member_Event> findByEventId(@Param("x") Long memId);
+}

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.EnseignantChercheur;
@@ -34,7 +35,20 @@ public class MemberRestController {
 	public Member findOneMemberById(@PathVariable Long id) {
 		return memberService.findMember(id);
 	}
-
+	@GetMapping(value = "/membres/search/email")
+	public Member findOneMemberByEmail(@RequestParam String email) {
+		return memberService.findByEmail(email);
+	}
+	@GetMapping(value = "/membres/search")
+	public List<EnseignantChercheur> findMembersByGrade(@RequestParam String grade) {
+		return memberService.findByGrade(grade);
+	}
+	@GetMapping(value = "/membres/search/etablissement")
+	public List<EnseignantChercheur> findMembersByEtablissement(@RequestParam String etab) {
+		return memberService.findByEtablissement(etab);
+	}
+	
+	
 	@PostMapping(value = "/membres/enseignant")
 	public Member addMembre(@RequestBody EnseignantChercheur m) {
 		return memberService.addMember(m);
